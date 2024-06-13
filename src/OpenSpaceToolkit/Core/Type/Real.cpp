@@ -921,6 +921,10 @@ Real::Real(const Real::Type& aType, const Real::ValueType& aReal)
 {
 }
 
+std::unique_ptr<Real> new_real_object(const double number) {
+    return std::unique_ptr<Real>(new Real(number));
+}
+
 }  // namespace type
 }  // namespace core
 }  // namespace ostk

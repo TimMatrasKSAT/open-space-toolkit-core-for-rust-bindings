@@ -6,6 +6,7 @@
 #include <OpenSpaceToolkit/Core/Type/Integer.hpp>
 #include <OpenSpaceToolkit/Core/Type/Sign.hpp>
 #include <OpenSpaceToolkit/Core/Type/String.hpp>
+#include <memory>
 
 namespace ostk
 {
@@ -143,6 +144,8 @@ class Real
 
     Real(const Real::Type& aType, const Real::ValueType& aReal);
 };
+
+std::unique_ptr<Real> new_real_object(const double number);
 
 }  // namespace type
 }  // namespace core
