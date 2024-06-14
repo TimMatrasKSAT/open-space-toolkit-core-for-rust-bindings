@@ -5,7 +5,7 @@
 
 #include <OpenSpaceToolkit/Core/Type/Real.hpp>
 #include <memory>
-#include "../RustBehaviour.hpp"
+// #include "../RustBehaviour.hpp
 
 namespace ostk
 {
